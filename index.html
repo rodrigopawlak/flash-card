@@ -39,20 +39,23 @@
                                         
             </article>
             <article class="cartao">
+                cartao.innerHTML = `
                 <div class="cartao__conteudo">
-                        <h3> Programação </h3>
+                    <h3>${categoria}</h3>
                     <div class="cartao__conteudo__pergunta">
-                                    qual é a capital do Brasil?
-                    </div>                        
-                    <div class="cartao__conteudo__resposta">
-                                Brasilia.
+                            <p>${pergunta}</p>
                     </div>
-                </div>
+                    <div class="cartao__conteudo__resposta">
+                            <p>${resposta}</p>
+                    </div>
+                    </div>
+                `
             </article>
         </section>
     </main>
     <footer>
         <p>projeto desenvolvido pela alura, sem fins lucrativos </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
